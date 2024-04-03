@@ -6,7 +6,7 @@ def caesar(message, offset):
     encrypted_text = ''
 
     for char in message.lower():
-        if char == ' ':
+        if char not in alphabet:
             encrypted_text += char
         else:
             index = alphabet.find(char)
